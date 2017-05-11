@@ -1,0 +1,25 @@
+<ion-view view-title="Your Super Fund Results" hide-nav-bar=true cache-view="false" ng-init="init()" can-swipe-back="false" hide-tabs>
+  <div class="bar bar-header bar-stable">
+    <a class="button button-icon icon ion-ios-arrow-left" ng-click="back()"></a>
+    <h1 class="title">
+            <span class="text-access">Your Super Fund Results</span>
+        </h1>
+  </div>
+  <ion-content class="has-header new-search has-footer">
+    <div class="super-result-content">
+      <ion-item-group>
+        <ion-item-divider class="item item-divider item-ios item-divider-ios item-ios-light item-divider-ios-light" color="light">MS. KATHLEEN VICKERY</ion-item-divider>
+        <div ng-repeat="result in results">
+          <ion-item-divider class="item-sub-divider" color="light">{{result.heading}}</ion-item-divider>
+          <ion-item ng-repeat="detail in result.details">
+            <p>{{detail.name}}</p>
+            <h2>{{detail.text}}</h2>
+          </ion-item>
+        </div>
+      </ion-item-group>
+    </div>
+  </ion-content>
+  <div class="bar bar-footer bar-stable custom-footer">
+    <button class="button button-block button-positive">Refresh My Search</button>
+  </div>
+</ion-view>

@@ -1,0 +1,49 @@
+<!--
+Create tabs with an icon and label, using the tabs-positive style.
+Each tab's child <ion-nav-view> directive will have its own
+navigation history that also transitions its views in and out.
+-->
+<ion-tabs class="tabs-icon-top tabs-color-active-positive" ng-class="{'tabs-item-hide': hideTabs}">
+
+  <!-- Dashboard Tab -->
+  <!--<ion-tab title="Home" icon-off="ion-ios-home-outline" icon-on="ion-ios-home" href="#/tab/dash">
+    <ion-nav-view name="tab-dash"></ion-nav-view>
+  </ion-tab>-->
+
+  <!-- Chats Tab -->
+  <!--  <ion-tab title="Services" icon-off="ion-ios-gear-outline" icon-on="ion-ios-gear" href="#/tab/chats">
+    <ion-nav-view name="tab-chats"></ion-nav-view>
+  </ion-tab>-->
+
+  <!-- Account Tab -->
+  <!--<ion-tab title="Contacts" icon-off="ion-ios-bookmarks-outline" icon-on="ion-ios-bookmarks" href="#/tab/account">
+    <ion-nav-view name="tab-account"></ion-nav-view>
+  </ion-tab>-->
+
+  <!-- FAQ -->
+  <!--<ion-tab title="FAQ" icon-off="ion-ios-information-outline" icon-on="ion-ios-information" href="#/tab/account">
+    <ion-nav-view name="tab-account"></ion-nav-view>
+  </ion-tab>-->
+
+  <!-- Dashboard Tab -->
+  <ion-tab title="Home" icon-off="home" icon-on="home" href="#/tab/home">
+    <ion-nav-view name="tab-home"></ion-nav-view>
+  </ion-tab>
+
+  <!-- Chats Tab -->
+  <ion-tab title="Services" icon-off="service" icon-on="service" href="#/tab/services">
+    <ion-nav-view name="tab-services"></ion-nav-view>
+  </ion-tab>
+
+  <!-- Account Tab -->
+  <ion-tab title="Contacts" icon-off="contact" icon-on="contact" href="#/tab/contacts">
+    <ion-nav-view name="tab-contacts"></ion-nav-view>
+  </ion-tab>
+
+  <!-- FAQ -->
+  <ion-tab title="FAQ" icon-off="faq" icon-on="faq" href="#/tab/faq">
+    <ion-nav-view name="tab-faq"></ion-nav-view>
+  </ion-tab>
+
+
+</ion-tabs>

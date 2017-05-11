@@ -1,0 +1,59 @@
+<!--
+  This template loads for the 'tab.friend-detail' state (app.js)
+  'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
+  The FriendsCtrl pulls data from the Friends service (service.js)
+  The Friends service returns an array of friend data
+-->
+<ion-view view-title="Contacts" hide-nav-bar=true cache-view="false" ng-init="init()" can-swipe-back="false">
+  <div class="bar bar-header bar-stable">
+    <h1 class="title">
+            <span class="text-access">Contacts</span>
+        </h1>
+    <button class="button button-clear">
+      <i class="ion-location"></i>
+    </button>
+  </div>
+  <ion-content class="has-header">
+    <div class="list card">
+      <a href="#" class="item item-icon-left">
+        <img class="icon" src="img/contact-location-icon.png" /> Level 4 32 Delhi Rd, North Ryde 2113, New South Wales, Australia. Mail: PO Box 115, North Ryde BC, 1670
+      </a>
+
+      <a href="#" class="item item-icon-left">
+        <img class="icon" src="img/contact-telephone-icon.png"> 1300 664 118
+      </a>
+
+      <a href="#" class="item item-icon-left">
+        <img class="icon" src="img/contact-smartphone-icon.png"> 82 084 204 035
+      </a>
+
+      <a href="#" class="item item-icon-left">
+        <img class="icon" src="img/contact-email-icon.png"> info@findmysuper.com.au
+      </a>
+    </div>
+
+    <!--Contact Form-->
+    <form class="contactForm">
+      <div class="list">
+        <p>Fill out the form below and we will get back to you shortly.</p>
+        <div style="box-shadow: 0px 0px 10px 0px #ddd;">
+          <label class="item item-input">
+            <input type="text" placeholder="Name">
+          </label>
+          <label class="item item-input">
+            <input type="text" placeholder="Email">
+          </label>
+          <label class="item item-input">
+            <input type="text" placeholder="Telephone">
+          </label>
+          <label class="item item-input">
+            <textarea type="text" placeholder="Type your message here"></textarea>
+          </label>
+        </div>
+        <div class="padding">
+          <button class="button button-block button-positive">Submit</button>
+        </div>
+      </div>
+    </form>
+  </ion-content>
+</ion-view>

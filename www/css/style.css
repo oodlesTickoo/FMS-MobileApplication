@@ -1,0 +1,401 @@
+/* Empty. Add your own CSS if you like */
+
+
+/*Generic Classes*/
+
+.no-border {
+  border: none !important;
+}
+
+.bold {
+  font-weight: bold !important;
+}
+
+
+/*Margins*/
+
+.mt20 {
+  margin-top: 20px !important;
+}
+
+.mb0 {
+  margin-bottom: 0 !important;
+}
+
+.button.button-positive {
+  border-color: transparent;
+  background-color: #8bc53f;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 50px;
+}
+
+.button.button-positive.active,
+.button.button-positive.activated {
+  background-color: #74ab2b;
+}
+
+.ion-ios-arrow-left:before {
+  color: #fff;
+}
+
+.textCenter {
+  text-align: center !important;
+}
+
+
+/*Ionic Tabs*/
+
+.tabs {
+  background-color: #20307b;
+  background-image: none;
+}
+
+.tabs .tab-item .tab-title {
+  font-size: 12px;
+  color: #a8a8a8;
+}
+
+.tabs .tab-item .icon {
+  background-repeat: no-repeat;
+  background-position: 50%;
+  height: 30px;
+  background-size: contain;
+}
+
+.tabs .tab-item .icon.home {
+  background-image: url('../img/home-icon.png');
+}
+
+.tabs .tab-item .icon.service {
+  background-image: url('../img/service-icon.png');
+}
+
+.tabs .tab-item .icon.contact {
+  background-image: url('../img/contact-icon.png');
+}
+
+.tabs .tab-item .icon.faq {
+  background-image: url('../img/faq-icon.png');
+}
+
+.tabs-icon-top > .tabs .tab-item {
+  margin-top: 2px;
+  opacity: 1;
+}
+
+ion-tabs.tabs-color-active-positive .tab-item.tab-item-active .icon.home,
+ion-tabs.tabs-color-active-positive .tab-item.active .icon.home,
+ion-tabs.tabs-color-active-positive .tab-item.activated .icon.home {
+  background-image: url('../img/home-icon-active.png');
+}
+
+ion-tabs.tabs-color-active-positive .tab-item.tab-item-active .icon.service,
+ion-tabs.tabs-color-active-positive .tab-item.active .icon.service,
+ion-tabs.tabs-color-active-positive .tab-item.activated .icon.service {
+  background-image: url('../img/service-icon-active.png');
+}
+
+ion-tabs.tabs-color-active-positive .tab-item.tab-item-active .icon.contact,
+ion-tabs.tabs-color-active-positive .tab-item.active .icon.contact,
+ion-tabs.tabs-color-active-positive .tab-item.activated .icon.contact {
+  background-image: url('../img/contact-icon-active.png');
+}
+
+ion-tabs.tabs-color-active-positive .tab-item.tab-item-active .icon.faq,
+ion-tabs.tabs-color-active-positive .tab-item.active .icon.faq,
+ion-tabs.tabs-color-active-positive .tab-item.activated .icon.faq {
+  background-image: url('../img/faq-icon-active.png');
+}
+
+ion-tabs.tabs-color-active-positive .tab-item.tab-item-active span.tab-title,
+ion-tabs.tabs-color-active-positive .tab-item.active span.tab-title,
+ion-tabs.tabs-color-active-positive .tab-item.activated span.tab-title {
+  color: #8bc53f;
+}
+
+
+/*Header*/
+
+.bar.bar-stable {
+  background-color: #20307b;
+}
+
+.bar.bar-stable .title {
+  color: #fff;
+}
+
+.bar-stable .button.button-clear {
+  margin-right: 10px;
+}
+
+.bar-stable .button.button-clear i {
+  color: #fff;
+  font-size: 25px;
+}
+
+
+/*Home Page*/
+
+.search-section {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.search-section img {
+  width: 30%;
+  margin-bottom: 10px;
+}
+
+.search-section button {
+  width: 80%;
+  margin: 0 auto;
+  text-transform: capitalize !important;
+  font-size: 20px;
+}
+
+.refresh-search {
+  margin-top: 50px;
+}
+
+
+/*New Search Page*/
+
+form.newSearchForm {
+  background: transparent;
+}
+
+.new-search .list .item:nth-child(2) {
+  border-top: 1px solid #a8a8a8;
+}
+
+.new-search .list .item:nth-child(6) {
+  border-bottom: 2px solid #a8a8a8;
+}
+
+form.newSearchForm p {
+  margin-bottom: 25px;
+  color: #000;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.new-search .list .item {
+  padding: 25px 12px;
+  border: none;
+  border-left: 1px solid #a8a8a8;
+  border-right: 1px solid #a8a8a8;
+}
+
+.item-checkbox {
+  border: none !important;
+  padding-left: 0 !important;
+}
+
+.item-checkbox .checkbox {
+  padding-left: 0;
+  left: 0;
+}
+
+.checkbox-icon:before {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  background: #fff !important;
+  border-color: #a8a8a8 !important;
+}
+
+.checkbox-icon:after {
+  top: 28%;
+  left: 15%;
+  width: 20px;
+  height: 7px;
+  border: 1px solid #8bc53f;
+  border-top: 0;
+  border-right: 0;
+}
+
+.checkbox input:checked:before,
+input:checked + .checkbox-icon:before {
+  border-width: 1px;
+}
+
+.item-content.disable-pointer-events {
+  margin-left: 45px;
+}
+
+
+/*Super result page*/
+
+ion-item-group {
+  display: block;
+}
+
+.platform-ios .item-divider-platform,
+.item-divider-ios {
+  background-color: #e0e0e0;
+  color: #20307b;
+  font-size: 20px;
+  font-weight: 500;
+  padding-bottom: 26px;
+}
+
+.item-sub-divider {
+  padding-left: 16px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #d1edac;
+  color: #2c3a81;
+}
+
+ion-item-group p {
+  color: #6e6e6e;
+  font-size: 17px !important;
+  margin-bottom: 10px !important;
+}
+
+ion-item-group h2 {
+  color: #3c3c3c;
+  text-shadow: 0 0 0 #3c3c3c;
+  font-size: 24px !important;
+}
+
+.custom-footer {
+  background-color: rgba(0, 0, 0, 0.60) !important;
+}
+
+.custom-footer .button {
+  margin: 0 auto;
+  max-width: 60%;
+}
+
+.super-result-content {
+  max-width: 425px;
+  margin: 0px auto;
+}
+
+
+/*
+.checkbox-icon:after {
+  top: 30%;
+  left: 17%;
+  width: 19px;
+  height: 7px;
+  border: 1px solid #8bc53f;
+}
+*/
+
+
+/*Service page*/
+
+ion-content .list {
+  max-width: 345px;
+  margin: 20px auto;
+}
+
+.item-avatar .item-content > img:first-child {
+  left: 0 !important;
+  max-width: 55px;
+  max-height: 55px;
+}
+
+.item-avatar .item-content,
+.item-avatar .item-content h2 {
+  overflow: initial !important;
+  text-overflow: initial !important;
+  white-space: normal !important;
+}
+
+.item-complex.item-icon-right .item-content {
+  padding-right: 0;
+}
+
+.item-avatar .item-content {
+  padding-left: 75px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+ion-list-header p {
+  line-height: 15px;
+  margin-bottom: 0;
+}
+
+
+/*contact page*/
+
+.card {
+  box-shadow: none;
+  margin: 20px 10px 0px 10px;
+}
+
+.card .item {
+  border: none;
+  padding-bottom: 30px;
+  overflow: visible;
+  text-overflow: inherit;
+  white-space: normal;
+  padding-top: 13px;
+  line-height: 18px;
+}
+
+.card .item:first-child {
+  padding-top: 0;
+  padding-bottom: 10px;
+}
+
+.card .item:last-child {
+  padding-bottom: 15px;
+}
+
+.item-icon-left .icon {
+  left: 11px;
+  width: 45px;
+  height: 45px;
+}
+
+.item-icon-left {
+  padding-left: 70px;
+}
+
+
+/*form*/
+
+form {
+  background-color: #f8f8f8;
+}
+
+form .list {
+  padding: 10px 20px;
+}
+
+form .list .item {
+  padding: 20px 12px 10px 12px;
+  border-top: none;
+  border-bottom: none;
+  border-color: #a8a8a8;
+}
+
+.list .item textarea,
+.list .item input[type="text"] {
+  border-bottom: 1px solid #cecece;
+  height: 24px;
+}
+
+form .list .item:first-child {
+  border-bottom: none;
+  border-top: 1px solid #a8a8a8 !important;
+}
+
+form .list .item:nth-child(4) {
+  border-bottom: 1px solid #a8a8a8 !important;
+}
+
+form .list p {
+  font-size: 16px;
+}

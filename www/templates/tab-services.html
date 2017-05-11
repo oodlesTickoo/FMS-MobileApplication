@@ -1,0 +1,26 @@
+<ion-view view-title="Services" hide-nav-bar=true cache-view="false" ng-init="init()" can-swipe-back="false">
+  <div class="bar bar-header bar-stable">
+    <h1 class="title">
+            <span class="text-access">Services</span>
+        </h1>
+  </div>
+  <ion-content class="service-list-page has-header">
+    <ion-list>
+      <ion-list-header>
+        <p class="bold">A step by step approach to finding andconsol dating all your superannuation accounts.</p>
+      </ion-list-header>
+      <div class="mt20">
+        <ion-item class="item-avatar item-icon-right no-border" ng-repeat="service in services" type="item-text-wrap">
+          <img ng-src="{{service.image}}">
+          <h2>{{service.text}}</h2>
+          <!--        <p>{{service.lastText}}</p>-->
+          <!--        <i class="icon ion-chevron-right icon-accessory"></i>-->
+
+          <!--<ion-option-button class="button-assertive" ng-click="remove(chat)">
+          Delete
+        </ion-option-button>-->
+        </ion-item>
+      </div>
+    </ion-list>
+  </ion-content>
+</ion-view>
