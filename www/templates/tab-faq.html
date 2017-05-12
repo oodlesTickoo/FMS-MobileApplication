@@ -12,6 +12,22 @@
             <h2>Congratulations on taking the first step of finding your Super and taking control of your financial future.</h2>
             <p>Find My Super has compiled answers to the most common questions regarding our search and consolidation process.</p>
           </ion-item>
+          <div ng-repeat="group in groups">
+            <ion-item class="item-stable" ng-click="toggleGroup(group)" ng-class="{active: isGroupShown(group)}">
+              <h3>{{group.title}}</h3>
+            </ion-item>
+            <ion-item class="item-accordion" ng-repeat="content in group.contents" ng-show="isGroupShown(group)">
+              <p>{{content.text}}</p>
+              <p>{{content.text1}}</p>
+              <p>{{content.text2}}</p>
+            </ion-item>
+          </div>
+        </ion-list>
+        <!--<ion-list>
+          <ion-item>
+            <h2>Congratulations on taking the first step of finding your Super and taking control of your financial future.</h2>
+            <p>Find My Super has compiled answers to the most common questions regarding our search and consolidation process.</p>
+          </ion-item>
           <ion-item>
             <h3>DOES FIND MY SUPER GUARANTEE A RESULT?</h3>
             <p>Find my super cannot guarantee a result. We rely on the accuracy of your data as well as the accuracy coming from the superannuation funds. All superannuation funds have to report contributions with a tax file number. If the tax file number matches then we are more likely to get a positive result.
@@ -34,7 +50,7 @@
 SUPER?</h3>
             <p></p>
           </ion-item>
-        </ion-list>
+        </ion-list>-->
       </div>
     </ion-list>
   </ion-content>

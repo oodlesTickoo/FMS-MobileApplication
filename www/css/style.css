@@ -29,7 +29,7 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   border-radius: 50px;
-    font-family: LatoRegular;
+  font-family: LatoRegular;
 }
 
 .button.button-positive.active,
@@ -48,50 +48,53 @@
 
 /*Placeholders*/
 
-form ::-webkit-input-placeholder {
+form::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
   color: #3c3c3c;
-	font-family: LatoLight;
+  font-family: LatoLight;
 }
 
-form ::-moz-placeholder {
+form::-moz-placeholder {
   /* Firefox 19+ */
   color: #3c3c3c;
-	font-family: LatoLight;
+  font-family: LatoLight;
 }
 
-form :-ms-input-placeholder {
+form:-ms-input-placeholder {
   /* IE 10+ */
   color: #3c3c3c;
-	font-family: LatoLight;
+  font-family: LatoLight;
 }
 
-form :-moz-placeholder {
+form:-moz-placeholder {
   /* Firefox 18- */
   color: #3c3c3c;
-	font-family: LatoLight;
+  font-family: LatoLight;
 }
 
+
 /*** Media queries ***/
+
+
 /*Iphone5*/
+
 @media screen and (device-aspect-ratio: 40/71) {
-	ion-content .list {
-		max-width: 290px !important;
-	}
-	
-	form.newSearchForm h2{
-		font-size: 18px !important;
-	}
-	.search-section {
-		margin-top: 0 !important;
-	}
-	.refresh-search {
-    	margin-top: 30px !important;
-	}
-	.search-section img {
-		width: 25% !important;
-		margin-bottom: 0px !important;
-	}
+  ion-content .list {
+    max-width: 290px !important;
+  }
+  form.newSearchForm h2 {
+    font-size: 18px !important;
+  }
+  .search-section {
+    margin-top: 0 !important;
+  }
+  .refresh-search {
+    margin-top: 30px !important;
+  }
+  .search-section img {
+    width: 25% !important;
+    margin-bottom: 0px !important;
+  }
 }
 
 
@@ -175,7 +178,7 @@ ion-tabs.tabs-color-active-positive .tab-item.activated span.tab-title {
 .bar.bar-stable .title {
   color: #fff;
   font-family: MyriadProRegular;
-	font-size: 18px;
+  font-size: 18px;
 }
 
 .bar-stable .button.button-clear {
@@ -277,7 +280,7 @@ input:checked + .checkbox-icon:before {
 
 .item-content.disable-pointer-events {
   margin-left: 45px;
-    font-family: LatoRegular;
+  font-family: LatoRegular;
 }
 
 
@@ -289,32 +292,31 @@ ion-item-group {
 
 .platform-ios .item-divider-platform,
 .item-divider-ios {
-  	background-color: #e0e0e0;
-	color: #20307b;
-	font-size: 20px;
-	/* font-weight: 500; */
-	padding-bottom: 26px;
-	font-family: LatoBold;
+  background-color: #e0e0e0;
+  color: #20307b;
+  font-size: 20px;
+  /* font-weight: 500; */
+  padding-bottom: 26px;
+  font-family: LatoBold;
 }
 
 .item-sub-divider {
   padding-left: 16px;
-	padding-top: 6px;
-	padding-bottom: 6px;
-	display: block;
-	font-size: 18px;
-	/* font-weight: bold; */
-	background-color: #d1edac;
-	color: #2c3a81;
-	font-family: LatoBlack;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  display: block;
+  font-size: 18px;
+  /* font-weight: bold; */
+  background-color: #d1edac;
+  color: #2c3a81;
+  font-family: LatoBlack;
 }
 
 ion-item-group p {
   color: #6e6e6e !important;
   font-size: 17px !important;
-  margin-bottom: 10px !important; 
+  margin-bottom: 10px !important;
   font-family: LatoRegular;
-	
 }
 
 ion-item-group h2 {
@@ -362,21 +364,20 @@ ion-content .list {
   margin: 20px auto;
 }
 
-
 .item-avatar .item-content > img:first-child {
   left: 0 !important;
   max-width: 55px;
   max-height: 55px;
-	top: 10px;
+  top: 10px;
 }
 
 .item-avatar .item-content,
 .item-avatar .item-content h2 {
   overflow: initial !important;
-	text-overflow: initial !important;
-	white-space: normal !important;
-	font-family: LatoLight;
-	font-size: 13px;
+  text-overflow: initial !important;
+  white-space: normal !important;
+  font-family: LatoLight;
+  font-size: 13px;
 }
 
 .item-complex.item-icon-right .item-content {
@@ -392,7 +393,7 @@ ion-content .list {
 ion-list-header p {
   line-height: 15px;
   margin-bottom: 0;
-    font-family: LatoRegular;
+  font-family: LatoRegular;
 }
 
 
@@ -411,8 +412,8 @@ ion-list-header p {
   white-space: normal;
   padding-top: 13px;
   line-height: 15px;
-    font-family: LatoSemiBold;
-	font-size: 13px;
+  font-family: LatoSemiBold;
+  font-size: 13px;
 }
 
 .card .item:first-child {
@@ -467,9 +468,9 @@ form .list .item:nth-child(4) {
   border-bottom: 1px solid #a8a8a8 !important;
 }
 
-form.contactForm .list p {    
-	font-size: 15px;
-    font-family: LatoRegular;
+form.contactForm .list p {
+  font-size: 15px;
+  font-family: LatoRegular;
 }
 
 
@@ -478,6 +479,7 @@ form.contactForm .list p {
 .faq-content .item {
   border: none;
   border-bottom: 1px solid #b7b7b7;
+	padding: 16px 5px;
 }
 
 .faq-content .list {
@@ -499,6 +501,14 @@ form.contactForm .list p {
   margin-bottom: 10px;
 }
 
+.faq-content .item p{
+	color: #3c3c3c;
+	font-size: 14px;
+	font-family: MyriadProRegular;
+	margin-bottom: 10px;
+	line-height: 18px;
+}
+
 .faq-content .item h3 {
   color: #8bc53f;
   font-family: LatoHeavy;
@@ -506,8 +516,33 @@ form.contactForm .list p {
   margin-bottom: 10px;
 }
 
-.faq-content .item p {
-  color: #3c3c3c;
-  font-size: 15px;
-  font-family: MyriadProRegular;
+.faq-content .item.item-accordion p {
+ color: #3c3c3c;
+font-size: 14px;
+font-family: MyriadProRegular;
+margin-bottom: 10px;
+line-height: 18px;
+}
+
+.list .item.item-accordion {
+  padding-top: 0;
+  padding-bottom: 0;
+  transition: 0.09s all linear;
+}
+
+.list .item.item-accordion.ng-hide {
+  line-height: 0px;
+}
+
+.list .item.item-accordion.ng-hide-add,
+.list .item.item-accordion.ng-hide-remove {
+  display: block !important;
+}
+
+.item.item-stable, .item.active.item-stable{
+	background: transparent;
+	padding-bottom: 0;
+}
+.item.active.item-stable{
+	border-bottom: none;
 }
