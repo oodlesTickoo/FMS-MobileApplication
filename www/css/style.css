@@ -29,6 +29,7 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   border-radius: 50px;
+    font-family: LatoRegular;
 }
 
 .button.button-positive.active,
@@ -45,7 +46,56 @@
 }
 
 
-/*Ionic Tabs*/
+/*Placeholders*/
+
+form ::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #3c3c3c;
+	font-family: LatoLight;
+}
+
+form ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #3c3c3c;
+	font-family: LatoLight;
+}
+
+form :-ms-input-placeholder {
+  /* IE 10+ */
+  color: #3c3c3c;
+	font-family: LatoLight;
+}
+
+form :-moz-placeholder {
+  /* Firefox 18- */
+  color: #3c3c3c;
+	font-family: LatoLight;
+}
+
+/*** Media queries ***/
+/*Iphone5*/
+@media screen and (device-aspect-ratio: 40/71) {
+	ion-content .list {
+		max-width: 290px !important;
+	}
+	
+	form.newSearchForm h2{
+		font-size: 18px !important;
+	}
+	.search-section {
+		margin-top: 0 !important;
+	}
+	.refresh-search {
+    	margin-top: 30px !important;
+	}
+	.search-section img {
+		width: 25% !important;
+		margin-bottom: 0px !important;
+	}
+}
+
+
+/*** Ionic Tabs ***/
 
 .tabs {
   background-color: #20307b;
@@ -124,6 +174,8 @@ ion-tabs.tabs-color-active-positive .tab-item.activated span.tab-title {
 
 .bar.bar-stable .title {
   color: #fff;
+  font-family: MyriadProRegular;
+	font-size: 18px;
 }
 
 .bar-stable .button.button-clear {
@@ -152,7 +204,7 @@ ion-tabs.tabs-color-active-positive .tab-item.activated span.tab-title {
   width: 80%;
   margin: 0 auto;
   text-transform: capitalize !important;
-  font-size: 20px;
+  font-size: 19px;
 }
 
 .refresh-search {
@@ -174,11 +226,12 @@ form.newSearchForm {
   border-bottom: 2px solid #a8a8a8;
 }
 
-form.newSearchForm p {
+form.newSearchForm h2 {
   margin-bottom: 25px;
   color: #000;
   font-size: 20px;
   letter-spacing: 1px;
+  font-family: LatoLight;
 }
 
 .new-search .list .item {
@@ -224,6 +277,7 @@ input:checked + .checkbox-icon:before {
 
 .item-content.disable-pointer-events {
   margin-left: 45px;
+    font-family: LatoRegular;
 }
 
 
@@ -235,34 +289,39 @@ ion-item-group {
 
 .platform-ios .item-divider-platform,
 .item-divider-ios {
-  background-color: #e0e0e0;
-  color: #20307b;
-  font-size: 20px;
-  font-weight: 500;
-  padding-bottom: 26px;
+  	background-color: #e0e0e0;
+	color: #20307b;
+	font-size: 20px;
+	/* font-weight: 500; */
+	padding-bottom: 26px;
+	font-family: LatoBold;
 }
 
 .item-sub-divider {
   padding-left: 16px;
-  padding-top: 6px;
-  padding-bottom: 6px;
-  display: block;
-  font-size: 18px;
-  font-weight: bold;
-  background-color: #d1edac;
-  color: #2c3a81;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	display: block;
+	font-size: 18px;
+	/* font-weight: bold; */
+	background-color: #d1edac;
+	color: #2c3a81;
+	font-family: LatoBlack;
 }
 
 ion-item-group p {
-  color: #6e6e6e;
+  color: #6e6e6e !important;
   font-size: 17px !important;
-  margin-bottom: 10px !important;
+  margin-bottom: 10px !important; 
+  font-family: LatoRegular;
+	
 }
 
 ion-item-group h2 {
   color: #3c3c3c;
   text-shadow: 0 0 0 #3c3c3c;
   font-size: 24px !important;
+  font-family: LatoRegular;
 }
 
 .custom-footer {
@@ -274,9 +333,14 @@ ion-item-group h2 {
   max-width: 60%;
 }
 
-.super-result-content {
+.custom-content-width {
   max-width: 425px;
   margin: 0px auto;
+}
+
+.custom-content-width .list {
+  max-width: none;
+  margin: 0px;
 }
 
 
@@ -298,17 +362,21 @@ ion-content .list {
   margin: 20px auto;
 }
 
+
 .item-avatar .item-content > img:first-child {
   left: 0 !important;
   max-width: 55px;
   max-height: 55px;
+	top: 10px;
 }
 
 .item-avatar .item-content,
 .item-avatar .item-content h2 {
   overflow: initial !important;
-  text-overflow: initial !important;
-  white-space: normal !important;
+	text-overflow: initial !important;
+	white-space: normal !important;
+	font-family: LatoLight;
+	font-size: 13px;
 }
 
 .item-complex.item-icon-right .item-content {
@@ -316,7 +384,7 @@ ion-content .list {
 }
 
 .item-avatar .item-content {
-  padding-left: 75px;
+  padding-left: 70px;
   padding-top: 12px;
   padding-bottom: 12px;
 }
@@ -324,6 +392,7 @@ ion-content .list {
 ion-list-header p {
   line-height: 15px;
   margin-bottom: 0;
+    font-family: LatoRegular;
 }
 
 
@@ -341,7 +410,9 @@ ion-list-header p {
   text-overflow: inherit;
   white-space: normal;
   padding-top: 13px;
-  line-height: 18px;
+  line-height: 15px;
+    font-family: LatoSemiBold;
+	font-size: 13px;
 }
 
 .card .item:first-child {
@@ -371,7 +442,7 @@ form {
 }
 
 form .list {
-  padding: 10px 20px;
+  padding: 10px;
 }
 
 form .list .item {
@@ -396,6 +467,47 @@ form .list .item:nth-child(4) {
   border-bottom: 1px solid #a8a8a8 !important;
 }
 
-form .list p {
+form.contactForm .list p {    
+	font-size: 15px;
+    font-family: LatoRegular;
+}
+
+
+/*** FAQ ***/
+
+.faq-content .item {
+  border: none;
+  border-bottom: 1px solid #b7b7b7;
+}
+
+.faq-content .list {
+  margin: 0 auto;
+}
+
+.faq-content .item h2,
+.faq-content .item h3,
+.faq-content .item p {
+  overflow: visible;
+  text-overflow: clip;
+  white-space: normal;
+}
+
+.faq-content .item h2 {
+  color: #8bc53f;
+  font-family: LatoHeavy;
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+
+.faq-content .item h3 {
+  color: #8bc53f;
+  font-family: LatoHeavy;
   font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.faq-content .item p {
+  color: #3c3c3c;
+  font-size: 15px;
+  font-family: MyriadProRegular;
 }

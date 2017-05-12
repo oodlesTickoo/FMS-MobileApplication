@@ -24,9 +24,7 @@ angular.module('starter.controllers', [])
 })
 
 .controller('FaqCtrl', function($scope) {
-  $scope.settings = {
-    enableFriends: true
-  };
+  
 })
 
 .controller('SearchCtrl', function($scope, $state) {
