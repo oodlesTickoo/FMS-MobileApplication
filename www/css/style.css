@@ -85,6 +85,11 @@ form:-moz-placeholder {
   form.newSearchForm h2 {
     font-size: 18px !important;
   }
+	ion-md-input input,
+	ion-md-input .md-bar{
+		width: 250px !important;
+	}
+  /*Home*/
   .search-section {
     margin-top: 0 !important;
   }
@@ -438,39 +443,139 @@ ion-list-header p {
 
 /*form*/
 
-form {
-  background-color: #f8f8f8;
-}
-
-form .list {
-  padding: 10px;
-}
-
-form .list .item {
-  padding: 20px 12px 10px 12px;
-  border-top: none;
-  border-bottom: none;
-  border-color: #a8a8a8;
-}
-
-.list .item textarea,
-.list .item input[type="text"] {
-  border-bottom: 1px solid #cecece;
-  height: 24px;
-}
-
-form .list .item:first-child {
-  border-bottom: none;
-  border-top: 1px solid #a8a8a8 !important;
-}
-
-form .list .item:nth-child(4) {
-  border-bottom: 1px solid #a8a8a8 !important;
-}
-
 form.contactForm .list p {
   font-size: 15px;
   font-family: LatoRegular;
+}
+
+form.newSearchForm .list {
+  border: 1px solid #a8a8a8;
+}
+
+ion-md-input {
+  position: relative;
+  margin-top: 45px;
+  margin-left: 20px;
+  display: block;
+}
+
+ion-md-input:first-child {
+  margin-top: inherit;
+}
+
+ion-md-input:last-child {
+  margin-bottom: inherit;
+}
+
+ion-md-input input {
+  font-size: 18px !important;
+  padding: 10px 10px 10px 5px !important;
+  display: block;
+  width: 300px;
+  border: none;
+  border-bottom: 1px solid #cecece !important;
+  vertical-align: baseline;
+}
+
+ion-md-input input:focus {
+  outline: none;
+}
+
+ion-md-input .md-bar {
+  position: relative;
+  display: block;
+  width: 300px;
+}
+
+ion-md-input .md-bar:before {
+  content: '';
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: #5264AE;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+ion-md-input .md-bar:before {
+  left: 50%;
+}
+
+ion-md-input input:focus ~ .md-bar:before {
+  left: 0%;
+  width: 100%;
+}
+
+ion-md-input label {
+  color: #999;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 5px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+  width: 280px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+ion-md-input input:focus ~ label,
+ion-md-input input:valid ~ label {
+  top: -20px;
+  font-size: 14px;
+  color: #5264AE;
+}
+
+ion-md-input .md-highlight {
+  position: absolute;
+  height: 60%;
+  width: 100px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+ion-md-input input:focus ~ .md-highlight {
+  -webkit-animation: inputHighlighter 0.3s ease;
+  -moz-animation: inputHighlighter 0.3s ease;
+  animation: inputHighlighter 0.3s ease;
+}
+
+@-webkit-keyframes inputHighlighter {
+  from {
+    background: #5264AE;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+
+@-moz-keyframes inputHighlighter {
+  from {
+    background: #5264AE;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+
+@keyframes inputHighlighter {
+  from {
+    background: #5264AE;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
 }
 
 
@@ -479,7 +584,7 @@ form.contactForm .list p {
 .faq-content .item {
   border: none;
   border-bottom: 1px solid #b7b7b7;
-	padding: 16px 5px;
+  padding: 16px 5px;
 }
 
 .faq-content .list {
@@ -501,12 +606,12 @@ form.contactForm .list p {
   margin-bottom: 10px;
 }
 
-.faq-content .item p{
-	color: #3c3c3c;
-	font-size: 14px;
-	font-family: MyriadProRegular;
-	margin-bottom: 10px;
-	line-height: 18px;
+.faq-content .item p {
+  color: #3c3c3c;
+  font-size: 14px;
+  font-family: MyriadProRegular;
+  margin-bottom: 10px;
+  line-height: 18px;
 }
 
 .faq-content .item h3 {
@@ -517,11 +622,11 @@ form.contactForm .list p {
 }
 
 .faq-content .item.item-accordion p {
- color: #3c3c3c;
-font-size: 14px;
-font-family: MyriadProRegular;
-margin-bottom: 10px;
-line-height: 18px;
+  color: #3c3c3c;
+  font-size: 14px;
+  font-family: MyriadProRegular;
+  margin-bottom: 10px;
+  line-height: 18px;
 }
 
 .list .item.item-accordion {
@@ -539,10 +644,12 @@ line-height: 18px;
   display: block !important;
 }
 
-.item.item-stable, .item.active.item-stable{
-	background: transparent;
-	padding-bottom: 0;
+.item.item-stable,
+.item.active.item-stable {
+  background: transparent;
+  padding-bottom: 0;
 }
-.item.active.item-stable{
-	border-bottom: none;
+
+.item.active.item-stable {
+  border-bottom: none;
 }

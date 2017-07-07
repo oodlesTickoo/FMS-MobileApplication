@@ -12,14 +12,12 @@
             <h2>Congratulations on taking the first step of finding your Super and taking control of your financial future.</h2>
             <p>Find My Super has compiled answers to the most common questions regarding our search and consolidation process.</p>
           </ion-item>
-          <div ng-repeat="group in groups">
-            <ion-item class="item-stable" ng-click="toggleGroup(group)" ng-class="{active: isGroupShown(group)}">
-              <h3>{{group.title}}</h3>
+          <div ng-repeat="group in groups track by $index">
+            <ion-item class="item-stable" ng-click="toggleGroup(group, $index)" ng-class="{active: isGroupShown(group)}">
+              <h3 id="{{$index}}">{{group.title}}</h3>
             </ion-item>
-            <ion-item class="item-accordion" ng-repeat="content in group.contents" ng-show="isGroupShown(group)">
-              <p>{{content.text}}</p>
-              <p>{{content.text1}}</p>
-              <p>{{content.text2}}</p>
+            <ion-item class="item-accordion" ng-show="isGroupShown(group)">
+              <p>{{group.content}}</p>
             </ion-item>
           </div>
         </ion-list>
